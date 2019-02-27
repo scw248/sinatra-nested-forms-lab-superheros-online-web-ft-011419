@@ -1,4 +1,4 @@
-class Pirate
+class Team
   
   attr_reader :name, :weight, :height
   
