@@ -15,8 +15,8 @@ class Member
     MEMBERS
   end
   
-  def self.clear
-    MEMBERS.clear
-  end
+  # def self.clear
+  #   MEMBERS.clear
+  # end
   
 end
