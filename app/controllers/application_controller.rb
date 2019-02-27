@@ -18,7 +18,7 @@ class App < Sinatra::Base
       params[:team][:members].each do |details|
         Member.new(details)
       end
-     
+     binding.pry
       @members = MEMBERS.all
       
       @member_name_1 = @members[0].name
