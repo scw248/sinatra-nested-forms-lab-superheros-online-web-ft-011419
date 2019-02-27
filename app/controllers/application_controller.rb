@@ -14,7 +14,7 @@ class App < Sinatra::Base
       
       @team_name = @team.name
       @team_motto = @team.motto
-     binding.pry
+     
       params[:team][:members].each do |details|
         Member.new(details)
       end
