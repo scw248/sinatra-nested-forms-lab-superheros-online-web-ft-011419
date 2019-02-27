@@ -21,15 +21,15 @@ class App < Sinatra::Base
      
       @members = Members.all
       
-      @member_name_1 = @member[0].name
-      @member_power_1 = @member[0].power
-      @member_bio_1 = @member[0].biography
-      @member_name_2 = @member[1].name
-      @member_power_2 = @member[1].power
-      @member_bio_2 = @member[1].biography
-      @member_name_3 = @member[2].name
-      @member_power_3 = @member[2].power
-      @member_bio_3 = @member[2].biography
+      @member_name_1 = @members[0].name
+      @member_power_1 = @members[0].power
+      @member_bio_1 = @members[0].biography
+      @member_name_2 = @members[1].name
+      @member_power_2 = @members[1].power
+      @member_bio_2 = @members[1].biography
+      @member_name_3 = @members[2].name
+      @member_power_3 = @members[2].power
+      @member_bio_3 = @members[2].biography
       
       erb :team
     end
