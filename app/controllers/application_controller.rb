@@ -30,7 +30,7 @@ class App < Sinatra::Base
       @member_name_3 = @members[2].name
       @member_power_3 = @members[2].power
       @member_bio_3 = @members[2].biography
-      
+      binding.pry
       erb :team
     end
 end
