@@ -19,7 +19,7 @@ class App < Sinatra::Base
         Member.new(details)
       end
      
-      @members = Members.all
+      @members = MEMBERS.all
       
       @member_name_1 = @members[0].name
       @member_power_1 = @members[0].power
