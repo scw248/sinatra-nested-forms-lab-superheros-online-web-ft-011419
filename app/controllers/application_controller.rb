@@ -16,7 +16,7 @@ class App < Sinatra::Base
       @team_motto = @team.motto
      
       params[:team][:members].each do |details|
-        Member.new(details)
+        Members.new(details)
       end
      
       @member = Member.all
