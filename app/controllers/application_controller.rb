@@ -12,7 +12,7 @@ class App < Sinatra::Base
       
       @team = Team.new(params[:team])
       
-      @team_name = @team[0].name
+      @team_name = @team.name
       @team_motto = @team[0].motto
      
       params[:team][:members].each do |details|
