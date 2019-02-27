@@ -19,12 +19,14 @@ class App < Sinatra::Base
       @member = Member.all
       
       @member_name_1 = @member[0].name
-      @member_type_1 = @ship[0].type
-      @ship_booty_1 = @ship[0].booty
-      @ship_name_2 = @ship[1].name
-      @ship_type_2 = @ship[1].type
-      @ship_booty_2 = @ship[1].booty
-      
+      @member_power_1 = @member[0].power
+      @member_bio_1 = @member[0].biography
+      @member_name_2 = @member[1].name
+      @member_power_2 = @member[1].power
+      @member_bio_2 = @member[1].biography
+      @member_name_3 = @member[2].name
+      @member_power_3 = @member[2].power
+      @member_bio_3 = @member[2].biography
       erb :team
     end
 end
