@@ -18,7 +18,7 @@ class App < Sinatra::Base
      
       @member = Member.all
       
-      @ship_name_1 = @ship[0].name
+      @member_name_1 = @member[0].name
       @ship_type_1 = @ship[0].type
       @ship_booty_1 = @ship[0].booty
       @ship_name_2 = @ship[1].name
