@@ -20,7 +20,7 @@ class App < Sinatra::Base
       end
      
       @members = Member.all
-      binding.pry
+      
       @member_name_1 = @members[0].name
       @member_power_1 = @members[0].power
       @member_bio_1 = @members[0].biography
