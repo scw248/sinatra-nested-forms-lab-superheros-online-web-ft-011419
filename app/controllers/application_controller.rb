@@ -31,6 +31,6 @@ class App < Sinatra::Base
       @member_power_3 = @member[2].power
       @member_bio_3 = @member[2].biography
       
-      erb :teams
+      erb :team
     end
 end
