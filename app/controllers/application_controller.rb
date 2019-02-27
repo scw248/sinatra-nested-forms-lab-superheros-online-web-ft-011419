@@ -11,7 +11,7 @@ class App < Sinatra::Base
     post "/teams" do
       
       @team = Team.new(params[:team])
-      binding.pry
+      
       @team_name = @team.name
       @team_motto = @team.motto
      
@@ -20,7 +20,7 @@ class App < Sinatra::Base
       end
      
       @members = Members.all
-      
+      binding.pry
       @member_name_1 = @members[0].name
       @member_power_1 = @members[0].power
       @member_bio_1 = @members[0].biography
