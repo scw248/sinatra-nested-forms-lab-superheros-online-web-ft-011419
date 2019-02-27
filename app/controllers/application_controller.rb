@@ -10,6 +10,20 @@ class App < Sinatra::Base
     
     post "/teams" do
       
+      @team = Team.new(params[:team])
+     
+      params[:team][:members].each do |details|
+        Member.new(details)
+      end
+     
+      @member = Member.all
+      
+      @ship_name_1 = @ship[0].name
+      @ship_type_1 = @ship[0].type
+      @ship_booty_1 = @ship[0].booty
+      @ship_name_2 = @ship[1].name
+      @ship_type_2 = @ship[1].type
+      @ship_booty_2 = @ship[1].booty
       
       erb :team
     end
